@@ -235,7 +235,7 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading"></h2>
                     <h3 class="section-subheading text-muted">
-                    Lengerich*, BJ, Wang*, H, Lee MK, Xing EP. 2016. GenAMap on the Web: TODO(Abstract #TODO). Presented at the 66th Annual Meeting of The American Society of Human Genetics, October 19, 2016, Vancouver, BC.
+                    Lengerich*, BJ, Wang*, H, Lee MK, Xing EP. 2016. GenAMap on the Web: Intuitive and Scalable Machine Learning for Structured Association Mapping (Abstract #TODO). Presented at the 66th Annual Meeting of The American Society of Human Genetics, October 19, 2016, Vancouver, BC.
                     <br><br>
                     
                     Curtis RE, Goyal A, Xing EP. 2012. <a href="http://www.biomedcentral.com/1471-2156/13/24"> Enhancing the usability and performance of structured association mapping algorithms using automation, parallelization, and visualization in the GenAMap software system.</a> BMC Genetics 13:24.
@@ -376,7 +376,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/ben.jpg" class="img-responsive img-circle" alt="">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
                         <h4>Benjamin J. Lengerich</h4>
                         <p class="text-muted">Role</p>
                         <ul class="list-inline social-buttons">
@@ -419,11 +419,11 @@
                         <img src="img/logos/cdar.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
-                <!--<div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/logos/scs.jpg" class="img-responsive img-centered" alt="">
                     </a>
-                </div>-->
+                </div>
             </div>
         </div>
     </aside>
@@ -455,10 +455,10 @@
                                     <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="form-group">
+                                <!--<div class="form-group">
                                     <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
-                                </div>
+                                </div>-->
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -481,14 +481,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; SAILING Lab 2016</span>
-                </div>
-                <div class="col-md-4" style="float:right;">
-                    <a href="http://sailing.cs.cmu.edu" target="_blank">
-                        <img src="img/logos/sailing.png" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
+                <p>GenAMap is a project of <a href="http://sailing.cs.cmu.edu">Sailing Lab</a> at <a href="http://cmu.edu">Carnegie Mellon University</a>.</p>
                 <!--<div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -532,16 +525,15 @@
                                 <h2>Structured Association Mapping</h2>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
                                 <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p> GenAMap has standard association mapping methods, as well as cutting-edge methods that incorporate population and sample structure to improve accuracy. Current algorithms include:
+                                <p> GenAMap offers cutting-edge machine learning methods for structured association mapping. Structured association mapping is the process of discovering genotype-phenotype assocations. Instead of examining a single SNP at a time, methods for structured association mapping consider all SNPs jointly, generating more accurate associations. Furthermore, these methods incorporate knowledge of sample and population structure to improve the accuracy and reliability of discovered associations. Current algorithms include:</p>
                                 <ul>
-                                    <li>Linear Regression (Lasso)</li>
-                                    <li>Multi-Population Lasso</li>
-                                    <li>Tree Lasso</li>
-                                    <li>Adaptive Multi-task Lasso</li>
-                                    <li>Graph-guided fused Lasso</li>
+                                    <li>Linear Regression (Lasso). This method assumes that there are few causal SNPs for each phenotype, and encourages sparsity in the resulting discovery. Details can be found in the peer-reviewed <a href="http://statweb.stanford.edu/~tibs/lasso/lasso.pdf" target="_blank">paper</a>.</li>
+                                    <li>Multi-Population Lasso. This method assumes that different sub-populations may have differences in the sets of causal SNPs, but encourages similar sets within sub-populations. Details can be found in the peer-reviewed <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881376/" target="_blank">paper</a>.</li>
+                                    <li>Tree Lasso. This method assumes a hierarchical structure to the response nodes, arranged in a tree structure. Details can be found in the peer-reviewed <a href="http://www.cs.cmu.edu/~epxing/papers/2012/Kim_Xing_AOAS12.pdf" target="_blank">paper</a>.</li>
+                                    <li>Adaptive Multi-task Lasso. This method uses similarities between traits to detect associations simultaneously for multiple traits. Details can be found in the peer-reviewed <a href="http://www.cs.cmu.edu/~seunghak/NIPS2010_0499.pdf" target="_blank">paper</a>.</li>
+                                    <li>Graph-guided fused Lasso. This method assumes that the traits are arranged in a graph structure. Details can be found in the peer-reviewed <a href="http://arxiv.org/abs/1005.3579" target="_blank">paper</a>.</li>
                                 </ul>
-                                </p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Feature</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -567,7 +559,7 @@
                                 <h2>Hypothesis Testing</h2>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
                                 <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <p>Hypothesis testing for individual SNPs </p>
+                                <p>Hypothesis testing is used to examine the potential association between a single nucleotide polymorphisms (SNPs) and a phentoype. GenAMap makes this process easy through intuitive an interface and visual results.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -595,7 +587,7 @@
                                 <h2>Confounding Effect Correction</h2>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
                                 <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>Variants of LMMs here.</p>
+                                <p>When measuring genotypic and phenotypic data, confounding effects can make random noise look reliable. GenAMap offers methods to detect such confounding effects, and correct for it. These methods are based on the Linear Mixed Model.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -651,7 +643,7 @@
                                 <h2>Integration with Genomic Data Commons</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>GDC details here.</p>
+                                <p>GenAMap makes it easy to import data from the <a href="https://gdc-portal.nci.nih.gov/" target="_blank">NIH Genomic Data Commons</a>, without needing to download large data files to your computer.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -679,7 +671,7 @@
                                 <h2>Intuitive Visualizations</h2>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
                                 <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Details about visualizations here.</p>
+                                <p>GenAMap makes it easy to visualize discovered associations. Interactive visualizations make it easy to explore and learn from your data. Current visualizations include: Matrix View, Mahattan Plot, Dendrogram.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
                             </div>
                         </div>
