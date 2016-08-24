@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GenAMap</title>
+    <title>GenAMap V2.0</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,7 +79,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Visual Machine Learning for Genomics</div>
-                <div class="intro-heading">GenAMap</div>
+                <div class="intro-heading">GenAMap V2.0</div>
                 <a href="http://54.201.144.116/" class="page-scroll btn btn-xl" target="_blank">Try Now</a>
             </div>
         </div>
@@ -98,7 +98,7 @@
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Data Management</h4>
                     <p class="text-muted">GenAMap organizes data in cloud-based projects for easy data handling.</p>
@@ -106,7 +106,7 @@
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Algorithm Automation</h4>
                     <p class="text-muted">GenAMap uses parallelization for easy scaling to human-scale data.</p>
@@ -114,7 +114,7 @@
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Interactive Visualizations</h4>
                     <p class="text-muted">GenAMap makes it easy to explore large association studies.</p>
@@ -199,7 +199,7 @@
                         <img src="img/portfolio/escape.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Integration with NIH Genomic Data Commons</h4>
+                        <h4>Integration with NIH NCI GDC</h4>
                         <p class="text-muted"></p>
                     </div>
                 </div>
@@ -560,6 +560,12 @@
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
                                 <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
                                 <p>Hypothesis testing is used to examine the potential association between a single nucleotide polymorphisms (SNPs) and a phentoype. GenAMap makes this process easy through intuitive an interface and visual results.</p>
+                                <p>GenAMap current offers three standard hypothesis testing methods</p>
+                                <ul>
+                                	<li>Chi-Square Test</li>
+                                	<li>Fisher Exact Test</li>
+                                	<li>Wald Test</li>
+                                </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -587,7 +593,11 @@
                                 <h2>Confounding Effect Correction</h2>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
                                 <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>When measuring genotypic and phenotypic data, confounding effects can make random noise look reliable. GenAMap offers methods to detect such confounding effects, and correct for it. These methods are based on the Linear Mixed Model.</p>
+                                <p>When measuring genotypic and phenotypic data, confounding effects can make random noise look reliable. GenAMap offers methods to detect such confounding effects, and correct for it, including standard linear mixed model and sparse linear mixed model</p>
+                                <ul>
+                                	<li>Linear Mixed Model: standard model learning effect sizes while correcting confounding factors, based on famose FaST-LMM implementation proposed in this <a href="http://www.nature.com/nmeth/journal/v8/n10/abs/nmeth.1681.html">paper</a></li>
+                                	<li>Sparse Linear Mixed Model: is an extension of linear mixed model that can correct confounding factors while select SNPs that contribute to phenotype combinatorially. Implementation is based on this <a href="http://bioinformatics.oxfordjournals.org/content/early/2012/11/22/bioinformatics.bts669">paper</a></li>
+                                </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
