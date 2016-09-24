@@ -550,17 +550,21 @@ section h3.section-subheading {
 .team-member p {
   margin-top: 0;
 }
+aside.clients {
+  background-color: #222222;
+}
 aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
+  /*.section-heading {
+        color: white;
+    }*/
 }
 section#contact .section-heading {
-  color: white;
+  color: black;
 }
 section#contact .form-group {
   margin-bottom: 25px;
