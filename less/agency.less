@@ -74,8 +74,17 @@ h1, h2, h3, h4, h5, h6 {
     .heading-font;
     font-weight: 700;
     border-radius: 3px;
-    font-size: 18px;
+    font-size: 22px;
     padding: 20px 40px;
+}
+
+.btn {
+    .button-variant(white; @theme-primary; @theme-primary);
+    .heading-font;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 15px 30px;
 }
 
 // Custom Navigation Bar
@@ -740,6 +749,10 @@ body {
     webkit-tap-highlight-color: @theme-primary;
 }
 
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
 
 .btn-xl.outline {
     background: none;
